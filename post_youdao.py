@@ -67,6 +67,11 @@ class Youdao():
 
 if __name__ == '__main__':
   while(True):
-    a=input("Please input what words do you want to translate ：")
-    youdao = Youdao(a)
-    print("fanyi result  :",youdao.fanyi())
+    try:
+        i=input("please input :")
+        youdao = Youdao(i)
+        print("fanyi result  :", youdao.fanyi())
+    except:
+        pass
+    # youdao = Youdao(i)
+    # print("fanyi result  :",youdao.fanyi())
